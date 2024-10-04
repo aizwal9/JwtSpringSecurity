@@ -45,11 +45,12 @@
       <artifactId>jjwt-impl</artifactId>
       <version>0.11.5</version>
     </dependency>
-<!--    <dependency>-->
-<!--      <groupId>io.jsonwebtoken</groupId>-->
-<!--      <artifactId>jjwt-jackson</artifactId>-->
-<!--      <version>0.11.5</version>-->
-<!--    </dependency>-->
+    <dependency>
+      <groupId>io.jsonwebtoken</groupId>
+      <artifactId>jjwt-gson</artifactId>
+      <version>0.11.5</version>
+      <scope>compile</scope>
+    </dependency>
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
