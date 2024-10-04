@@ -24,17 +24,18 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
     @Resource private HandlerExceptionResolver handlerExceptionResolver;
 
     @Resource private JwtService jwtService;
-    @Resource private UserDetailsService userDetailsService;
+    @Resource
+    private UserDetailsService userDetailsService;
 
-//    public JwtAuthenticationFilter(
-//            JwtService jwtService,
-//            UserDetailsService userDetailsService,
-//            HandlerExceptionResolver handlerExceptionResolver
-//    ) {
-//        this.jwtService = jwtService;
-//        this.userDetailsService = userDetailsService;
-//        this.handlerExceptionResolver = handlerExceptionResolver;
-//    }
+    public JwtAuthenticationFilter(
+            JwtService jwtService,
+            UserDetailsService userDetailsService,
+            HandlerExceptionResolver handlerExceptionResolver
+    ) {
+        this.jwtService = jwtService;
+        this.userDetailsService = userDetailsService;
+        this.handlerExceptionResolver = handlerExceptionResolver;
+    }
 
     @Override
     protected void doFilterInternal(
