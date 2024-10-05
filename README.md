@@ -31,7 +31,7 @@ This project demonstrates how to build a secure Spring Boot API using JWT (JSON 
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/spring-boot-jwt-auth.git
+   git clone https://github.com/aizwal9/JwtSpringSecurity.git
    ```
 2. **Create MySQL Database:**
    - Create a MySQL database named `taskdb`.
